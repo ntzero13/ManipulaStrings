@@ -8,6 +8,7 @@ public class TI82ManipulaStrings {
         int op;
         do{
             System.out.println("1 - Tamanho String");
+            System.out.println("2 - Arvore de letras");
 
 
             System.out.println("0 - Sair");
@@ -24,6 +25,11 @@ public class TI82ManipulaStrings {
                  * System.out.println("A string inserida tem: "+t+"caracteres");
                   */
                     break;
+                
+                case 2:
+                ExerciciosStrings.arvoreCharAt();
+
+                break;
                 default:
                     System.out.println("Insira opção Valida");
                     
