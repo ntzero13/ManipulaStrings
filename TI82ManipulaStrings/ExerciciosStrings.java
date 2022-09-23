@@ -2,9 +2,9 @@ package TI82ManipulaStrings;
 
 public class ExerciciosStrings {
     static String s,s1;
+
     static void leStrings(String texto){
-        String s,s1;
-        System.out.println("Insira um texto");
+        System.out.println(texto);
         s = TI82ManipulaStrings.ler.next();
         s1 = TI82ManipulaStrings.ler.nextLine();
         s = s+s1;
@@ -18,10 +18,6 @@ public class ExerciciosStrings {
     public static void arvoreCharAt() {
         int x,y;
         
-        System.out.println("Insira uma palavra");
-        s = TI82ManipulaStrings.ler.next();
-        s1 = TI82ManipulaStrings.ler.nextLine();
-        s = s+s1;
         for(x=0;x<s.length();x++){
             for(y=0;y<=x;y++){
                 System.out.print(s.charAt(y));
@@ -38,5 +34,21 @@ public class ExerciciosStrings {
                 
         
 
+    }
+
+    public static void capitalizaLetras() {
+        
+        leStrings("Insira um texto");
+        System.out.println(s.toLowerCase());
+        System.out.println(s.toUpperCase());
+
+
+
+
+        
+        
+
+
+        
     }
 }

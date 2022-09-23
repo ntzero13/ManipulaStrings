@@ -1,39 +1,44 @@
 package TI82ManipulaStrings;
+
 import java.util.Scanner;
 
 public class TI82ManipulaStrings {
-    public static Scanner ler = new Scanner (System.in);
-    
-        public static void main(String[] args){
+    public static Scanner ler = new Scanner(System.in);
+
+    public static void main(String[] args) {
         int op;
-        do{
+        do {
             System.out.println("1 - Tamanho String");
             System.out.println("2 - Arvore de letras");
-
+            System.out.println("3 - capitalizaçao de letras");
 
             System.out.println("0 - Sair");
             System.out.println("Insira a opçao pretendida");
-            op=ler.nextInt();
+            op = ler.nextInt();
             switch (op) {
                 case 0:
-                    
-                    break;
-            
-                case 1:
-                System.out.println("A string inserida tem: "+ExerciciosStrings.contaCaracteres()+"Caracteres");
-                /* int t = ExerciciosStrings.contaCaracteres();
-                 * System.out.println("A string inserida tem: "+t+"caracteres");
-                  */
-                    break;
-                
-                case 2:
-                ExerciciosStrings.arvoreCharAt();
 
-                break;
+                    break;
+
+                case 1:
+                    System.out.println("A string inserida tem: " + ExerciciosStrings.contaCaracteres() + "Caracteres");
+                    /*
+                     * int t = ExerciciosStrings.contaCaracteres();
+                     * System.out.println("A string inserida tem: "+t+"caracteres");
+                     */
+                    break;
+
+                case 2:
+                    ExerciciosStrings.arvoreCharAt();
+
+                    break;
+
+                case 3:
+                    ExerciciosStrings.capitalizaLetras();
                 default:
                     System.out.println("Insira opção Valida");
-                    
+
             }
-        } while(op!=0);
+        } while (op != 0);
     }
 }
